@@ -1,7 +1,9 @@
 pub mod util;
 
-use util::map_and_set::test_map_and_set;
+use util::iterator_mod::test_iterator;
+
+
 fn main() {
-  test_map_and_set();
+  test_iterator();
 }
 
