@@ -17,5 +17,19 @@ fn main() {
     else {
         println!("You can't drive yet.")
     }
+    let mut x = 0;
+
+    loop {
+        println!("Hello from rust");
+        if x > 5 {
+            break;
+        }
+        x += 1;
+    }
+
+    for loop in rust
+    for num in 1..=10 {
+        println!("Hello from rust {}", num);
+    }
 }
 
