@@ -3,10 +3,11 @@ pub mod closure;
 pub mod match_demo;
 pub mod enum_demo;
 pub mod struct_mod;
+pub mod generic_mod;
 
-use struct_mod::test_struct;
+use generic_mod::test_mod;
 
 fn main() {
-    test_struct()
+    test_mod();
 }
 
