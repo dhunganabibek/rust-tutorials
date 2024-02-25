@@ -1,7 +1,7 @@
 pub fn test_match(){
     let my_age: u8 = 36;
 
-    let y: u8 = 5;
+    let _y: u8 = 5;
 
 
     match my_age {
