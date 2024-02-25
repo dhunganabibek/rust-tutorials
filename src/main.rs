@@ -1,13 +1,21 @@
 pub mod util;
 
-use util::{get_full_name, add};
+use util::can_drive;
 
 
 fn main() {
-    let full_name = get_full_name("John", "Doe");
-    println!("Full Name: {}", full_name);
+    let age_to_drive  = 16 as u8;
+    let mut my_input = String::from("");
+    println!("Enter your age: ");
+    std::io::stdin().read_line(&mut my_input).unwrap();
+    println!("You entered: {}", my_input);
 
-    let sum = add(10, 20);
-    println!("Sum: {}", sum);
+
+    if my_input.trim().parse::<u8>().unwrap() >= age_to_drive{
+        println!("You can drive");
+    }
+    else {
+        println!("You can't drive yet.")
+    }
 }
 
