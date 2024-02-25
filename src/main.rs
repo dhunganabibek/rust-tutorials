@@ -1,6 +1,6 @@
-pub mod map_and_set;
+pub mod util;
 
-use map_and_set::test_map_and_set;
+use util::map_and_set::test_map_and_set;
 fn main() {
   test_map_and_set();
 }
