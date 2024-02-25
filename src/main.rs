@@ -1,10 +1,11 @@
 pub mod util;
 pub mod closure;
+pub mod match_demo;
 
-use closure::test_closures;
+use match_demo::test_match;
 
 
 fn main() {
-    test_closures()
+    test_match()
 }
 
