@@ -16,6 +16,14 @@ impl Person {
         self.birth_month)
     
     }
+    pub fn new(first_name: &str, last_name: &str, birth_year: u16, birth_month: u8) -> Person {
+        Person {
+            first_name: first_name.to_string(),
+            last_name: last_name.to_string(),
+            birth_year,
+            birth_month
+        }
+    }
 }
 
 pub fn test_struct(){
@@ -26,6 +34,8 @@ pub fn test_struct(){
         birth_month: 11
     };
     p1.first_name = "Test".to_string();
+
+    let p2 = Person::new("Bibek", "Dhungana", 1997, 11);
 
     println!("{}", p1.info());
 
