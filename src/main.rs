@@ -1,8 +1,7 @@
-pub mod vector_mod;
+pub mod map_and_set;
 
-use vector_mod::test_vector;
-
+use map_and_set::test_map_and_set;
 fn main() {
-    test_vector();
+  test_map_and_set();
 }
 
