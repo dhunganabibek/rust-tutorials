@@ -1,4 +1,4 @@
 pub fn test_closures(){
-    let add = || println!("Testing closures");
-    add();
+    let add = |x| println!("Testing closures: {}", x);
+    add(20);
 }
