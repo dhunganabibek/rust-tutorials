@@ -4,9 +4,16 @@ fn main() {
 
     let ans = a + pi as i32;
 
-    let myStr  = 'A';
-    let myStr2 = "Hello World!";
+    let my_str  = 'A';
+    let my_str2 = "Hello World!";
+
+    let my_tup = ("Hello", 5, 3.1415);
+    let ages:[u128; 5] = [1,2,3,4,5];
+
+    //slices
+    let slice = &ages[1..3];
+
 
     
-    println!("{}", ans);
+    println!("{:?}", slice);
 }
