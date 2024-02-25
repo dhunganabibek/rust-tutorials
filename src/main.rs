@@ -1,8 +1,8 @@
-pub mod generic_mod;
+pub mod vector_mod;
 
-use generic_mod::test_mod;
+use vector_mod::test_vector;
 
 fn main() {
-    test_mod();
+    test_vector();
 }
 
