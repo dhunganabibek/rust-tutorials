@@ -1,9 +1,7 @@
 pub mod util;
 
-use util::iterator_mod::test_iterator;
-
-
+use util::serde_mod::test_serde;
 fn main() {
-  test_iterator();
+  test_serde();
 }
 
